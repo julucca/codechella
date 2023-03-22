@@ -1,0 +1,48 @@
+@import url("../style.css");
+
+.banner {
+    position: relative;
+    height: 16.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.95;
+}
+
+.banner--home::before {
+    background: url("../../img/banner-homepage.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+.banner__title {
+    font-family: var(--font-secondary);
+    line-height: 2.6rem;
+    max-width: 17rem;
+}
+
+@media (min-width: 768px) {
+    .banner {
+        height: 24rem;
+    }
+
+    .banner__title {
+        font-size: 4rem;
+        line-height: 5.2rem;
+        max-width: 34rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .banner {
+        height: 25.5rem;
+    }
+}

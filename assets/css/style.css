@@ -1,0 +1,54 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-gray: #444444;
+    --color-dark-blue: #304968;
+    --color-boreal-purple: rgb(70, 80, 189); 
+    --color-dark-green: #008364;
+    --color-green: #36C1A0;
+    --color-lilac: #B6BCFF;
+    --color-light-blue: #C8DEEF;
+    --gradient-boreal: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+
+    --color-chairs: #01A89E;
+    --color-upper-chairs: #3F51B5;
+    --color-common-floor: #FE016E;
+    --color-premium-floor: #0E7DF1;
+
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Calistoga', cursive;
+}
+
+/* -------------------- base */
+
+body {
+    background: var(--gradient-boreal);
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    /* font-family: var(--font-secondary); */
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+a, 
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width: 360px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1440px) {}
