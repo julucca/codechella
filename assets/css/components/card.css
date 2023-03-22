@@ -45,11 +45,26 @@
         max-width: 75rem;
     }
 
+    .card--experience:nth-of-type(3) {
+        flex-direction: row-reverse;
+    }
+
     .card__image {
         margin-bottom: 0;
         height: 24rem;
         width: 43.85vw;
         min-width: 18.75rem;
         max-width: 38rem;
+    }
+
+    .card__info--experience {
+        max-width: 33.75rem;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .card__info--alternative {
+        text-align: right;
+        align-items: end;
     }
 }

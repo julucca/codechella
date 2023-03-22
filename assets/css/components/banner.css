@@ -23,6 +23,13 @@
     background-position: center; 
 }
 
+.banner--experience::before {
+    background: url("../../img/banner-experience.jpg");
+    background-size: 145%;
+    background-position: top 10% left;
+    opacity: 40%;
+}
+
 .banner__title {
     font-family: var(--font-secondary);
     line-height: 2.6rem;
@@ -32,6 +39,11 @@
 @media (min-width: 768px) {
     .banner {
         height: 24rem;
+    }
+
+    .banner--experience::before {
+        background-size: cover;
+        background-position: center;
     }
 
     .banner__title {
