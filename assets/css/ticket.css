@@ -1,0 +1,91 @@
+@import url("./style.css");
+@import url("./components/header.css");
+@import url("./components/banner.css");
+@import url("./components/button.css");
+@import url("./components/footer.css");
+
+
+/* -------------------- form */
+.form {
+    padding: 2rem 1.5rem;
+    margin-inline: auto;
+    max-width: 50rem;
+}
+
+.form__title {
+    font-family: var(--font-secondary);
+    line-height: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form__fieldset {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.form__label {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.35rem;
+}
+
+.form__field legend {
+    margin-bottom: .5rem;
+}
+
+.form__input {
+    color: var(--color-gray);
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    box-sizing: border-box;
+    border: 0;
+    height: 3.5rem;
+    padding: .625rem;
+}
+
+.form__select {
+    appearance: none;
+    background: url("../img/icon-arrow-drop-down.svg") 96% / 1rem no-repeat white;
+}
+
+
+@media (min-width: 768px) {
+    
+    .form {
+        padding: 3rem 3.75rem;
+    }
+
+    .form__title {
+        font-size: 3rem;
+        line-height: 3.9rem;
+    }
+
+    .form__field:nth-of-type(n+3) {
+        max-width: 28rem;
+    }
+}
+
+
+@media (min-width: 1280px) {
+
+    .form__fieldset {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .form__field:first-of-type,
+    .form__field:nth-of-type(2) {
+        grid-column: span 2;
+    }
+}

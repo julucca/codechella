@@ -11,7 +11,18 @@
     padding: .5rem 2.75rem;
 }
 
-.button__icon--card {
+.button--ticket {
+    color: inherit;
+    font-family: inherit;
+    font-weight: 700;
+    padding: .5rem .625rem;
+    margin-inline: auto;
+    border: none;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.button__icon--card,
+.button__icon--ticket {
     font-size: 2rem;
 }
 
