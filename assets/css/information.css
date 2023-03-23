@@ -1,0 +1,70 @@
+@import url("./style.css");
+@import url("./components/header.css");
+@import url("./components/banner.css");
+@import url("./components/footer.css");
+
+/* -------------------- common questions */
+.info {
+    padding: 3rem 1.5rem;
+    margin-inline: auto;
+}
+
+.info__title {
+    font-family: var(--font-secondary);
+    line-height: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.info__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    max-width: 62.25rem;
+    margin-inline: auto;
+}
+
+.info__question {
+    font-weight: 700;
+    line-height: 2.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--color-boreal-purple);
+}
+
+.info__icon {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.info__text {
+    background-color: var(--color-light-blue);
+    color: var(--color-gray);
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.info__text--active {
+    padding: 1rem;
+    max-height: none;
+    margin-bottom: 1rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .info {
+        padding: 3rem 3.75rem;
+    }
+
+    .info__title {
+        font-size: 3rem;
+        line-height: 3.9rem;
+    }
+}
