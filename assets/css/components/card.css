@@ -16,6 +16,10 @@
     width: 100%;
 }
 
+.card__image--sectors {
+    height: 15rem;
+}
+
 .card__info {
     display: flex;
     flex-direction: column;
@@ -28,10 +32,27 @@
     max-width: 24.5rem;
 }
 
+.card__title--sectors {
+    max-width: none;
+    margin-bottom: 1.5rem;
+}
+
+.card__title--sectors:first-child {
+    margin-bottom: 2rem;
+}
+
 
 @media (min-width: 768px) {
     .card__image {
         max-width: none;
+    }
+
+    .card__title--sectors:first-child {
+        font-size: 2.5rem;
+    }
+
+    .card__image--sectors {
+        max-width: 24rem;
     }
 }
 
@@ -49,12 +70,22 @@
         flex-direction: row-reverse;
     }
 
+    .card--sectors {
+        flex-direction: column;
+        max-width: 75rem;
+    }    
+
     .card__image {
         margin-bottom: 0;
         height: 24rem;
         width: 43.85vw;
         min-width: 18.75rem;
         max-width: 38rem;
+    }
+
+    .card__image--sectors {
+        width: 100%;
+        height: 15rem;
     }
 
     .card__info--experience {
@@ -67,4 +98,8 @@
         text-align: right;
         align-items: end;
     }
+
+    .card__title--sectors:first-child {
+        margin-bottom: 3rem;
+    }    
 }

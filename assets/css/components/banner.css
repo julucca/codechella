@@ -30,6 +30,13 @@
     opacity: 40%;
 }
 
+.banner--sectors::before {
+    background: url("../../img/banner-sectors.jpg");
+    background-size: 130%;
+    background-position: 80% 95%;
+    opacity: 40%;
+}
+
 .banner__title {
     font-family: var(--font-secondary);
     line-height: 2.6rem;

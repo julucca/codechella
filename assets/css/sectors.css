@@ -1,0 +1,121 @@
+@import url("./style.css");
+@import url("./components/header.css");
+@import url("./components/banner.css");
+@import url("./components/card.css");
+@import url("./components/footer.css");
+
+
+/* -------------------- map */
+.sectors__map {
+    text-align: center;
+}
+
+.sectors__image {
+    width: 100%;
+    max-width: 22.5rem;
+}
+
+.sectors__label {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: flex-start;
+    margin-inline: auto;
+    width: 15.375rem;
+}
+
+.label__item {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    gap: 1rem;
+}
+
+.label__item span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.label__item:first-of-type span {
+    background-color: var(--color-premium-floor);
+}
+
+.label__item:nth-of-type(2) span {
+    background-color: var(--color-common-floor);
+}
+
+.label__item:nth-of-type(3) span {
+    background-color: var(--color-chairs);
+}
+.label__item:nth-of-type(4) span {
+    background-color: var(--color-upper-chairs);
+}
+.label__item:last-of-type span {
+    background-image: url("../img/sectors-legend.jpg");
+    background-size: cover;
+}
+
+
+/* -------------------- details */
+.sectors__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+
+@media (min-width: 768px) {
+    
+    .sectors__map {
+        padding: 2rem 3.75rem;
+    }
+
+    .sectors__label h4 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .sectors__image {
+        max-width: 40.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sectors__map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3rem;
+    }
+
+    .sectors__label {
+        margin-inline: 0;
+    }
+
+    .sectors__label h4 {
+        margin-top: 0;
+    }
+
+    .sectors__image {
+        max-width: 61.5rem;
+    }
+
+    /* -------------------- details */
+    .sectors__list {
+        flex-direction: row;
+        column-gap: 1.5rem;
+        max-width: 1197rem;
+    }
+
+    .sectors__item {
+        max-width: 383px;
+    }
+
+    .sectors__item:nth-child(2) {
+        margin-top: 6.625rem;
+    }
+}
