@@ -1,0 +1,96 @@
+@import url("./style.css");
+@import url("./components/header.css");
+@import url("./components/banner.css");
+@import url("./components/footer.css");
+
+/* -------------------- ticket */
+
+.ticket {
+    padding: 4rem 1.5rem;
+    margin-inline: auto;
+    max-width: 40.5rem;
+    text-align: center;
+}
+
+.ticket__title {
+    font-weight: 700;
+    line-height: 2.35rem;
+    margin-bottom: 2rem;
+}
+
+.ticket__card {
+    background: linear-gradient(306deg, #36C1A0 0%, #4650BD 100%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+}
+
+.ticket__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket__logo {
+    width: 7rem;
+}
+
+.ticket__code {
+    margin-block: 2rem;
+    width: 10rem;
+}
+
+.ticket__info {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.ticket__name {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.35rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    .ticket__title span {
+        display: block;
+    }
+    
+    .ticket__code {
+        width: 16rem;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .ticket {
+        max-width: 49.5rem;
+    }
+
+    .ticket__title span {
+        display: none;
+    }
+
+    .ticket__card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        row-gap: 2rem;
+        column-gap: 3rem;
+    }
+
+    .ticket__header {
+        grid-column: span 2;
+    }
+
+    .ticket__code {
+        margin-block: 0;
+        width: 12rem;
+    }
+
+    .ticket__info {
+        justify-self: left;
+        text-align: left;
+    }
+}

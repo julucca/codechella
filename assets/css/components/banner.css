@@ -14,27 +14,26 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    opacity: 0.95;
+    opacity: 40%;
 }
 
 .banner--home::before {
     background: url("../../img/banner-homepage.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    opacity: 0.95; 
 }
 
 .banner--experience::before {
     background: url("../../img/banner-experience.jpg");
     background-size: 145%;
     background-position: top 10% left;
-    opacity: 40%;
 }
 
 .banner--sectors::before {
     background: url("../../img/banner-sectors.jpg");
     background-size: 130%;
     background-position: 80% 95%;
-    opacity: 40%;
 }
 
 .banner--info::before {
@@ -43,7 +42,6 @@
         url("../../img/banner-info.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 40%;
 }
 
 .banner--ticket::before {
@@ -53,7 +51,14 @@
     background-size: 768px;
     background-position: 70% 18%;
     background-repeat: no-repeat;
-    opacity: 40%;
+}
+
+.banner--checkout::before {
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../img/banner-checkout.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
 .banner__title {
@@ -63,7 +68,8 @@
 }
 
 .banner__title--info,
-.banner__title--ticket {
+.banner__title--ticket,
+.banner__title--checkout {
     max-width: 19.5rem;
 }
 
@@ -89,7 +95,8 @@
     }
 
     .banner__title--info,
-    .banner__title--ticket  {
+    .banner__title--ticket,
+    .banner__title--checkout {
         max-width: none;
     }
 }
