@@ -3,55 +3,61 @@
 @import url("./components/banner.css");
 @import url("./components/footer.css");
 
+
 /* -------------------- common questions */
-.info {
+
+.accordion {
     padding: 3rem 1.5rem;
     margin-inline: auto;
+    max-width: 40.5rem;
 }
 
-.info__title {
+.accordion__title {
     font-family: var(--font-secondary);
     line-height: 2.6rem;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.info__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: .5rem;
-    max-width: 62.25rem;
-    margin-inline: auto;
+.accordion__item {
+    margin-bottom: .5rem;
 }
 
-.info__question {
-    font-weight: 700;
-    line-height: 2.35rem;
+.accordion__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    font-weight: 700;
+    line-height: 2.35rem;
     background-color: var(--color-boreal-purple);
+    padding: 1rem;
+    cursor: pointer;
 }
 
-.info__icon {
+.accordion__icon {
     font-size: 2rem;
     line-height: 2rem;
+    transition: transform 300ms ease-in-out;
 }
 
-.info__text {
+.accordion__content {
     background-color: var(--color-light-blue);
     color: var(--color-gray);
     font-size: 1.25rem;
     line-height: 2.5rem;
+    margin-bottom: 1rem;
     max-height: 0;
     overflow: hidden;
+    transition: max-height .5s ease-in-out;
 }
 
-.info__text--active {
+.accordion__text {
     padding: 1rem;
-    max-height: none;
-    margin-bottom: 1rem;
+}
+
+.accordion__content.active {
+    max-height: 100vh;
+    transition: max-height 2s linear;
 }
 
 .underline {
@@ -59,11 +65,11 @@
 }
 
 @media (min-width: 768px) {
-    .info {
+    .accordion {
         padding: 3rem 3.75rem;
     }
 
-    .info__title {
+    .accordion__title {
         font-size: 3rem;
         line-height: 3.9rem;
     }

@@ -39,31 +39,62 @@
             <h1 class="banner__title banner__title--info">Informações Gerais</h1>
         </section>
 
-        <!-- PERGUNTAS FREQUENTES -->
-        <section class="info">
-            <h2 class="info__title">Perguntas Frequentes:</h2>
-            <ul class="info__list">
-                <li>
-                    <h3 class="info__question">Quais serão as atrações?<span class="material-icons info__icon">arrow_drop_down</span></h3>
-                    <p class="info__text info__text--active">Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. <span class="underline">Confira o line-up em detalhes clicando neste link!</span></p>
-                </li>
-                <li>
-                    <h3 class="info__question">Qual é a classificação etária?<span class="material-icons info__icon">arrow_drop_down</span></h3>
-                    <p class="info__text">A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais ou responsáveis legais. Menores de 10 anos não podem entrar.</p>
-                </li>
-                <li>
-                    <h3 class="info__question">Quais são os setores disponíveis?<span class="material-icons info__icon">arrow_drop_down</span></h3>
-                    <p class="info__text">Pista Premium<br>Pista Comum<br>Cadeiras Térreo<br>Cadeiras Superiores<br>Rampas</p>
-                </li>
-                <li>
-                    <h3 class="info__question">Quais são os itens proibidos?<span class="material-icons info__icon">arrow_drop_down</span></h3>
-                    <p class="info__text">Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, capacetes, cadeiras ou bancos, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, substâncias inflamáveis, cigarro eletrônico, corrosivas e ou tóxicas, revistas, jornais, livros e copo térmico ou similares.</p>
-                </li>
-                <li>
-                    <h3 class="info__question">Quem tem direito a meia-entrada?<span class="material-icons info__icon">arrow_drop_down</span></h3>
-                    <p class="info__text">De acordo com a Lei Federal, têm direito ao benefício da meia-entrada aqueles que preencherem os requisitos e apresentarem os documentos comprobatórios.</p>
-                </li>
-            </ul>
+        <!-- COMMON QUESTIONS -->
+        <section class="accordion">
+            <h2 class="accordion__title">Perguntas Frequentes:</h2>
+
+            <div class="accordion__item" data-accordion="item">
+                <h3 class="accordion__header">
+                    Quais serão as atrações?
+                    <span class="material-icons accordion__icon" data-accordion="icon">arrow_drop_down</span>
+                </h3>
+                <div class="accordion__content" data-accordion="content">
+                    <p class="accordion__text">Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. <a href="../index.html" class="underline">Confira o line-up em detalhes clicando neste link!</a></p>
+                </div>
+            </div>
+
+            <div class="accordion__item" data-accordion="item">
+                <h3 class="accordion__header">
+                    Qual é a classificação etária?
+                    <span class="material-icons accordion__icon" data-accordion="icon">arrow_drop_down</span>
+                </h3>
+                <div class="accordion__content" data-accordion="content">
+                    <p class="accordion__text">A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais ou responsáveis legais. Menores de 10 anos não podem entrar.</p>
+                </div>
+            </div>
+
+            <div class="accordion__item" data-accordion="item">
+                <h3 class="accordion__header">
+                    Quais são os setores disponíveis?
+                    <span class="material-icons accordion__icon" data-accordion="icon">arrow_drop_down</span>
+                </h3>
+                <div class="accordion__content" data-accordion="content">
+                    <p class="accordion__text">Pista Premium<br>Pista Comum<br>Cadeiras térreo<br>Cadeiras superiores<br>Rampas</p>
+                </div>
+                <p >
+
+                </p>
+            </div>
+
+            <div class="accordion__item" data-accordion="item">
+                <h3 class="accordion__header">
+                    Quais são os itens proibidos?
+                    <span class="material-icons accordion__icon" data-accordion="icon">arrow_drop_down</span>
+                </h3>
+                <div class="accordion__content" data-accordion="content">
+                    <p class="accordion__text">Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, capacetes, cadeiras ou bancos, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, substâncias inflamáveis, cigarro eletrônico, corrosivas e ou tóxicas, revistas, jornais, livros e copo térmico ou similares.</p>
+                </div>
+            </div>
+
+            <div class="accordion__item" data-accordion="item">
+                <h3 class="accordion__header">
+                    Quem tem direito a meia-entrada?
+                    <span class="material-icons accordion__icon" data-accordion="icon">arrow_drop_down</span>
+                </h3>
+                <div class="accordion__content" data-accordion="content">
+                    <p class="accordion__text">De acordo com a Lei Federal, têm direito ao benefício da meia-entrada aqueles que preencherem os requisitos e apresentarem os documentos comprobatórios.</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -87,6 +118,7 @@
         </div>
     </footer>
     
+    <script src="../scripts/accordion.js"></script>
 </body>
 
 </html>

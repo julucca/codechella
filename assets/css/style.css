@@ -2,10 +2,10 @@
     --color-white: #FFFFFF;
     --color-gray: #444444;
     --color-dark-blue: #304968;
-    --color-boreal-purple: rgb(70, 80, 189); 
+    --color-boreal-purple: #4751bd; 
     --color-dark-green: #008364;
     --color-green: #36C1A0;
-    --color-lilac: #B6BCFF;
+    --color-lilac: #b6bcff;
     --color-light-blue: #C8DEEF;
     --gradient-boreal: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
 
@@ -44,6 +44,14 @@ a,
 a:active {
     text-decoration: none;
     color: inherit;
+}
+
+button {
+    color: inherit;
+    font-family: var(--font-primary);
+    border: none;    
+    background: transparent;
+    padding: 0;
 }
 
 @media (min-width: 360px) {}
